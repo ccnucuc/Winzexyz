@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINZEX - Biolink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(180deg, #e3f2ff 0%, #f7faff 50%, #ffffff 100%);
+            --text-color: #1a1a1b;
+            --card-bg: #ffffff;
+            --accent-color: #3897f0;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            color: var(--text-color);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: 800;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #222;
+        }
+
+        .verified-icon {
+            color: #0095f6;
+            font-size: 22px;
+        }
+
+        .sub-name {
+            color: #7d5fff;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            background: #2d2d2d;
+            color: white;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .icon-box:hover {
+            transform: translateY(-5px);
+            background: #000;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .link-card {
+            background: var(--card-bg);
+            padding: 22px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #444;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+
+        .external-icon {
+            color: white;
+            font-size: 14px;
+            background: #4db2ff;
+            padding: 10px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://via.placeholder.com/150" alt="WINZEX" class="profile-img">
+    
+    <div class="intro-text">WINZEXINVENICE</div>
+    <div class="name">
+        WINZEX
+        <i class="fas fa-check-circle verified-icon"></i>
+    </div>
+    <div class="sub-name">Digital Creator</div>
+
+    <div class="social-icons">
+        <a href="https://facebook.com/winzvannang" class="icon-box" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://tiktok.com/@winz9210" class="icon-box" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+
+    <div class="links-container">
+        <a href="https://facebook.com/winzvannang" class="link-card" target="_blank">
+            <span>Liên hệ Facebook</span>
+            <div class="external-icon"><i class="fas fa-external-link-alt"></i></div>
+        </a>
+
+        <a href="https://tiktok.com/@winz9210" class="link-card" target="_blank">
+            <span>Theo dõi TikTok</span>
+            <div class="external-icon"><i class="fas fa-external-link-alt"></i></div>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
